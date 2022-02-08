@@ -3,6 +3,7 @@ from . import utilities
 from . import pythongas
 from datetime import date
 from random import randint
+import requests
 
 
 def isUserValid(username, connection):
@@ -174,6 +175,30 @@ def returnGas():
         return [gas_result, 1]
     except Exception as e:
         return [f'{e}', 0]
+
+def getwojakInx():
+    try:
+        req = requests.get('https://api.wojakindex.biz/current_wojak_index.json')
+        index = req.json()
+        wojak_result = index["pink_wojak_index"]
+        if wojak_result <= 50:
+            string = f"""The current wojak Index is {wojak_result}.\nGeneral Sentiment: Living Life\nRecommended Action: SELL"""
+            return [string, 1]
+
+        elif 50 < wojak_result <= 300:
+            string = f"The current wojak Index is {wojak_result}.\nGeneral Sentiment: Uncertaincy\nRecommended Action: HODL"
+            return [string, 1]
+
+        elif 300 < wojak_result <= 500:
+            string = f"The current wojak Index is {wojak_result}.\nGeneral Sentiment: Worried\nRecommended Action: START DCA"
+            return [string, 1]
+
+        elif wojak_result > 500:
+            string = f"The current wojak Index is {wojak_result}.\nGeneral Sentiment: Suicidal\nRecommended Action: BUY"
+            return [string, 1]
+
+    except Exception as e:
+        return [f'{e}', e]
 
 
 def getHwk(connection):

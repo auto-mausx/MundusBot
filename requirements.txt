@@ -1,0 +1,7 @@
+python-telegram-bot==13.4.1
+functions-framework==3.*
+toml
+requests
+gunicorn==20.1.0
+flask==2.0.2
+gevent
