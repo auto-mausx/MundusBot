@@ -1,3 +1,4 @@
+from email.mime import audio
 import random
 # Add your custom commands here | If you plan on writing one, I strongly recommend checking out the telegram API docs
 
@@ -98,6 +99,14 @@ def lamboshop(update, context):
     chat_id=update.effective_chat.id, animation=custom_gif
 )
 
+### Audio ###
+
+def jeetrug(update, context):
+    custom_audio = 'AwACAgEAAxkBAAEQ7YZiCoarEb1dyF3C7v8iI-UHHtOqggACkQIAAnQ_SUTcVg4_qXAzjyME'
+    context.bot.send_voice(
+    chat_id=update.effective_chat.id, voice=custom_audio
+)
+
 # Always have this object at the last line | Add your custom commands to this dict
 custom_cmds = {
     'samsayingyes': samsayingyes,
@@ -113,5 +122,6 @@ custom_cmds = {
     'forcefulyes': forcefulyes,
     'jeffery': jeffery,
     'jewfery': jewfery,
-    'nicehat': nicehat
+    'nicehat': nicehat,
+    'jeetrug': jeetrug
 }

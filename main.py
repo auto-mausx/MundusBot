@@ -48,7 +48,8 @@ def getHelp(update, context):
                         '/jeffery'\n
                         '/jewfery'\n
                         '/getwojakindex'\n
-                        '/nicehat'
+                        '/nicehat'\n
+                        '/jeetrug'
                     """
 
     context.bot.send_message(
