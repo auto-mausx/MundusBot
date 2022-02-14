@@ -20,7 +20,7 @@ Requires a few libraries to get running, for an easy install you can just run ``
 
 * See [custom functions](./lib/custom.py) for a detailed list of stickers, gifs and memes that can be requested from a chat
 
-* Added a custom getwojakindex function for working with the wojakindex.xyz API
+* Added a custom getwojakindex function for working with the [Wojak Index](https://www.wojakindex.biz/) API
 
 * ```settings.json``` is all but deprecated, since this bot does not use a database, however it may be easier for you to run this bot locally using the ```settings.json``` file
 
