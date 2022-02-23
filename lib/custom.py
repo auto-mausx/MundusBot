@@ -107,6 +107,12 @@ def jeetrug(update, context):
     chat_id=update.effective_chat.id, voice=custom_audio
 )
 
+def goingtozero(update, context):
+    custom_audio = 'AwACAgEAAxkBAAERNoBiFrgz1-DQ0T_h9P3t2IBj80eHXwACLAIAAk4fkUQTlzJdwzvbbiME'
+    context.bot.send_voice(
+    chat_id=update.effective_chat.id, voice=custom_audio
+)
+
 # Always have this object at the last line | Add your custom commands to this dict
 custom_cmds = {
     'samsayingyes': samsayingyes,
@@ -123,5 +129,6 @@ custom_cmds = {
     'jeffery': jeffery,
     'jewfery': jewfery,
     'nicehat': nicehat,
-    'jeetrug': jeetrug
+    'jeetrug': jeetrug,
+    'goingtozero': goingtozero
 }
