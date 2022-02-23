@@ -77,8 +77,10 @@ def getwojakIndex(update, context):
 # Unknown Command
 def unknownCmd(update, context):
     response = 'Sorry, I didn\'t understand that command. Try /gethelp to see a list of commands'
-
-    update.message.reply_text(text=response)
+    if update.message.text == "/p":
+        return
+    else:    
+        update.message.reply_text(text=response)
 
 
 # ===== Admin Commands ===== #
