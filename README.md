@@ -8,6 +8,14 @@ This bot requires you to expose your Bot token as an environemnt variable called
 
 Requires a few libraries to get running, for an easy install you can just run ```pip3 install -r requirements.txt``` from the root directory.
 
+# Upcoming Changelog
+
+* Add crypto price alerts on command
+
+* going to zero audio
+
+* Jeffery mirin
+
 # 1.0 'GENESIS' Changelog
 
 * Begining stages of a MEME bot mimicing another priavte chat bot that has an actual use case, see the repo this was forked from for an actual bot use case
