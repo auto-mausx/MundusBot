@@ -50,7 +50,8 @@ def getHelp(update, context):
                         '/getwojakindex'\n
                         '/nicehat'\n
                         '/jeetrug',\n
-                        '/goingtozero'
+                        '/goingtozero',\n
+                        '/ibelieve'
                     """
 
     context.bot.send_message(

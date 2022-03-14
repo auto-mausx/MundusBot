@@ -112,6 +112,12 @@ def goingtozero(update, context):
     context.bot.send_voice(
     chat_id=update.effective_chat.id, voice=custom_audio
 )
+    
+def ibelieve(update, context):
+    custom_audio = 'CQACAgEAAxkBAAERwBhiLYW8CFAkSeDMYkLWqO_udG0JFQACnwEAAvgqeUSuOBtKcjgZsSME'
+    context.bot.send_audio(
+    chat_id=update.effective_chat.id, audio=custom_audio
+)
 
 # Always have this object at the last line | Add your custom commands to this dict
 custom_cmds = {
@@ -130,5 +136,6 @@ custom_cmds = {
     'jewfery': jewfery,
     'nicehat': nicehat,
     'jeetrug': jeetrug,
-    'goingtozero': goingtozero
+    'goingtozero': goingtozero,
+    'ibelieve': ibelieve
 }
